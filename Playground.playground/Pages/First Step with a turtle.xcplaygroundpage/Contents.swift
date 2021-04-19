@@ -1,11 +1,11 @@
 //: [Previous](@previous) / [Next](@next)
 /*:
-## Canvas size
+ ## Canvas size
  
  Set the size of your desired canvas by adjusting the constants on lines 19 and 20.
  */
-let preferredWidth = 600
-let preferredHeight = 600
+let preferredWidth = 300
+let preferredHeight = 300
 /*:
  ## Required code
  
@@ -33,11 +33,51 @@ PlaygroundPage.current.liveView = canvas
  You can remove the code on line 49 and begin writing your own code.
  
  [Documentation](http://russellgordon.ca/CanvasGraphics/Documentation/) is available.
-
+ 
  */
+func goToCenterOfScreen() {
+    turtle.forward(steps: canvas.width / 2)
+    turtle.drawSelf()
+    turtle.left(by: 90)
+    turtle.forward(steps: canvas.height / 2)
+    turtle.drawSelf()
+    turtle.right(by: 90)
+}
 
-// Replace this comment with your first comment – what is the goal of the code you're about to write?
-canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
+//Move the turtle to the middle bottom
+func drawArrow()
+{
+    turtle.drawSelf()
+    turtle.forward(steps: 50)
+    turtle.drawSelf()
+    turtle.right(by: 90)
+    turtle.drawSelf()
+    turtle.forward(steps: 20)
+    turtle.drawSelf()
+    turtle.left(by: 135)
+    turtle.drawSelf()
+    turtle.forward(steps: 60)
+    turtle.drawSelf()
+    turtle.left(by: 90)
+    turtle.drawSelf()
+    turtle.forward(steps: 60)
+    turtle.drawSelf()
+    turtle.left(by: 135)
+    turtle.drawSelf()
+    turtle.forward(steps: 20)
+    turtle.drawSelf()
+    turtle.right(by: 90)
+    turtle.drawSelf()
+    turtle.forward(steps: 50)
+    turtle.drawSelf()
+    turtle.left(by: 90)
+    turtle.drawSelf()
+    turtle.forward(steps: 50)
+    turtle.drawSelf()
+}
+
+goToCenterOfScreen()
+drawArrow()
 
 /*:
  ## Show the Live View
@@ -46,7 +86,7 @@ canvas.drawRectangle(at: Point(x: 50, y: 75), width: 100, height: 200)
  Remember to show the Live View (1 then 2):
  
  ![timeline](timeline.png "Timeline")
-
+ 
  ## Use source control
  To keep your work organized, receive feedback, and earn a high grade in this course, regular use of source control is a must.
  
