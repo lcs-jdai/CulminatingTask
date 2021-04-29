@@ -36,8 +36,7 @@ PlaygroundPage.current.liveView = canvas
  
  */
 func goToCenterOfScreen() {
-    turtle.forward(steps: canvas.width / 2)
-    turtle.drawSelf()
+    turtle.forward(steps: 2)
     turtle.left(by: 90)
     turtle.forward(steps: canvas.height / 2)
     turtle.drawSelf()
@@ -47,37 +46,162 @@ func goToCenterOfScreen() {
 //Move the turtle to the middle bottom
 func drawArrow()
 {
-    turtle.drawSelf()
-    turtle.forward(steps: 50)
-    turtle.drawSelf()
-    turtle.right(by: 90)
-    turtle.drawSelf()
-    turtle.forward(steps: 20)
-    turtle.drawSelf()
-    turtle.left(by: 135)
-    turtle.drawSelf()
-    turtle.forward(steps: 60)
-    turtle.drawSelf()
+    let squareSize = 5
+    turtle.penDown()
+    turtle.forward(steps: 5 * squareSize)
     turtle.left(by: 90)
-    turtle.drawSelf()
-    turtle.forward(steps: 60)
-    turtle.drawSelf()
-    turtle.left(by: 135)
-    turtle.drawSelf()
-    turtle.forward(steps: 20)
-    turtle.drawSelf()
+    turtle.forward(steps: 2 * squareSize)
+    turtle.right(by: 135)
+    turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
     turtle.right(by: 90)
-    turtle.drawSelf()
-    turtle.forward(steps: 50)
-    turtle.drawSelf()
+    turtle.forward(steps: Int(3.0 * Double(2).squareRoot() * Double(squareSize)))
+    turtle.right(by: 135)
+    turtle.forward(steps: 2 * squareSize)
     turtle.left(by: 90)
-    turtle.drawSelf()
-    turtle.forward(steps: 50)
-    turtle.drawSelf()
+    turtle.forward(steps: 5 * squareSize)
+    turtle.right(by: 90)
+    turtle.forward(steps: 2 * squareSize)
 }
 
 goToCenterOfScreen()
-drawArrow()
+let squareSize = 6
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 5 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 5 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 5 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.left(by: 90)
+turtle.forward(steps: 5 * squareSize)
+turtle.left(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.right(by: 90)
+turtle.forward(steps: 27 * squareSize)
+turtle.right(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.right(by: 90)
+turtle.forward(steps:5 * squareSize)
+turtle.right(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+turtle.right(by: 90)
+turtle.forward(steps:5 * squareSize)
+turtle.right(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+turtle.right(by: 90)
+turtle.forward(steps:5 * squareSize)
+turtle.right(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+turtle.right(by: 90)
+turtle.forward(steps:5 * squareSize)
+turtle.right(by: 90)
+turtle.forward(steps: 49 * squareSize)
+turtle.right(by: 180)
+for _ in 1...7 {
+  
+    drawArrow()
+    turtle.penUp()
+    turtle.right(by: 90)
+    turtle.forward(steps: 7 * squareSize)
+    
+}
+
+
+
+
+
 
 /*:
  ## Show the Live View
